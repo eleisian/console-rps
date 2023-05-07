@@ -39,7 +39,7 @@ function game() {
   console.log(`Welcome to Rock, Paper, Scissors, ${playerName}!`);
   
   for (let i = 0; i < 5; i++) {
-    let playerSelection = prompt("Enter Rock, Paper, or Scissors.")
+    let playerSelection = prompt("Let us begin. Enter Rock, Paper, or Scissors.")
       .trim()
       .toLowerCase();
     if (playerSelection === null) {
@@ -63,7 +63,7 @@ function game() {
   }
 }
 
-const playerName = prompt("Please enter your name.");
+const playerName = prompt("Hello! Welcome to Rock Paper Scissors, what is your name?");
 if (playerName === null) {
   console.log("Game cancelled.");
 } else {
