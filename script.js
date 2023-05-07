@@ -1,7 +1,7 @@
 let playerScore = 0;
 let computerScore = 0;
 
-let playerName = prompt("Welcome to Rock, Paper, Scissors! What is your name?");
+let playerName = prompt("Hello! Welcome to Rock, Paper, Scissors! What is your name?");
 
 function computerPlay() {
   let selection = ["rock", "paper", "scissors"];
