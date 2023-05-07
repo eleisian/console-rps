@@ -6,7 +6,7 @@ The player can review the game inside of the console and keep track of their sco
 This program greets the user and asks for the user's name. 
 Then, the game begins. 
 
-You can play it here: 
+You can play it here: https://sturdybinder.github.io/console-rps/
 
 
 Thank you for reviewing! 
