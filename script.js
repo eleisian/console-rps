@@ -17,8 +17,8 @@ function playRound(playerSelection, computerSelection, roundNumber) {
     }
   }
   
-  console.log(`Round ${roundNumber}: You chose ${playerSelection}.`);
-  console.log(`Round ${roundNumber}: Computer chose ${computerSelection}.`);
+  console.log(`You chose ${playerSelection}.`);
+  console.log(`Computer chose ${computerSelection}.`);
   
   if (playerSelection === computerSelection) {
     console.log(`Round ${roundNumber}: It's a tie!`);
@@ -27,10 +27,10 @@ function playRound(playerSelection, computerSelection, roundNumber) {
     (playerSelection === "paper" && computerSelection === "rock") ||
     (playerSelection === "scissors" && computerSelection === "paper")
   ) {
-    console.log(`Round ${roundNumber}: You win this round! ${playerSelection} beats ${computerSelection}.`);
+    console.log(`You win this round! ${playerSelection} beats ${computerSelection}.`);
     playerScore++;
   } else {
-    console.log(`Round ${roundNumber}: You lose this round! ${computerSelection} beats ${playerSelection}.`);
+    console.log(`You lose this round! ${computerSelection} beats ${playerSelection}.`);
     computerScore++;
   }
 }
