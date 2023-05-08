@@ -39,17 +39,20 @@ function game() {
   console.log(`Welcome to Rock, Paper, Scissors, ${playerName}!`);
   
   for (let i = 0; i < 5; i++) {
-    let playerSelection = prompt(`Round ${i+1}: Let us begin. Enter Rock, Paper, or Scissors.`);
+    const roundMessage = `Round ${i+1}: Let us begin. Enter Rock, Paper, or Scissors.`;
+    let playerSelection = prompt(roundMessage);
+    
     if (playerSelection === null) {
       console.log("Game cancelled.");
       return;
     }
+    
     playerSelection = playerSelection.trim().toLowerCase();
     
     const computerSelection = computerPlay();
     playRound(playerSelection, computerSelection);
     
-    console.log(`Current score: ${playerName} ${playerScore} - ${computerScore} Computer`);
+    console.log(`Round ${i+1}: Current score: ${playerName} ${playerScore} - ${computerScore} Computer`);
   }
   
   console.log(`Final score: ${playerName} ${playerScore} - ${computerScore} Computer`);
@@ -61,7 +64,6 @@ function game() {
     console.log("It's a tie game!");
   }
 }
-
 
 const playerName = prompt("Hello! Welcome to Rock Paper Scissors, what is your name?");
 if (playerName === null) {
